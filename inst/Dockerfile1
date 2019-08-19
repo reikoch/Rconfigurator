@@ -1,0 +1,10 @@
+FROM debian:stretch
+
+LABEL org.label-schema.license="GPL-3.0" \
+      org.label-schema.vcs-url="https://github.com/reikoch/cloner" \
+      org.label-schema.vendor="Reproducible R Project"
+
+ENV LC_ALL=en_US.UTF-8 \
+    LANG=en_US.UTF-8 \
+    TERM=xterm \
+    R_VERSION=

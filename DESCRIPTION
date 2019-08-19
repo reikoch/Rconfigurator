@@ -1,0 +1,22 @@
+Package: Rconfigurator
+Title: create a Dockerfile of an exactly defined R configuration
+Version: 0.2.0
+Authors@R: 
+    person(given = "Reinhold",
+           family = "Koch",
+           role = c("aut", "cre"),
+           email = "8436725+reikoch@users.noreply.github.com")
+Description: Given a recent version number of R and a set of R packages with their version numbers
+    create a Dockerfile that implements this R configuration. All standard tests for R and
+    the packages will be executed when building the docker image.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    desc,
+    curl,
+    httr,
+    readr
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0)
