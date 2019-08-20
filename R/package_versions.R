@@ -27,7 +27,7 @@ cranurl <- function(pkg, version) {
 consistent <- function(R_version, packages, versions) {
   R_url <- paste0('https://cloud.r-project.org/src/base/R-3/R-', R_version, '.tar.gz')
   if (httr::HEAD(R_url)$status_code != 200) {
-    stop('R version', R_version, 'could not be found under https://cloud.r-project.org/src/base/R-3/\n')
+    stop('R version ', R_version, ' could not be found under https://cloud.r-project.org/src/base/R-3/\n')
   }
   ##TODO: check existence of R_version R    https://cloud.r-project.org/src/base/R-3/R-3.1.2.tar.gz
   # download the indicated package versions

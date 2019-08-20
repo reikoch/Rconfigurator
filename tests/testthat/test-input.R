@@ -3,9 +3,7 @@ test_that("Rcpp retrievable", {
 })
 
 test_that("R version too old", {
-  rc <- consistent('2.4.12', 'Rcpp', '1.0.2')
-  expect_false(rc)
-  expect_named(rc, 'R')
+  expect_error(consistent('2.4.12', 'Rcpp', '1.0.2'))
 })
 
 test_that("missing package versions listed", {

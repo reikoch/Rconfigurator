@@ -7,7 +7,7 @@
 consistent(R_version, packages, versions)
 }
 \arguments{
-\item{R_version}{character vector of desired R version}
+\item{R_version}{string indicating desired R version}
 
 \item{packages}{character vector of desired package names}
 

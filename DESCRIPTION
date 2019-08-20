@@ -1,6 +1,6 @@
 Package: Rconfigurator
 Title: create a Dockerfile of an exactly defined R configuration
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person(given = "Reinhold",
            family = "Koch",
